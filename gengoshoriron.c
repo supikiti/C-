@@ -13,8 +13,7 @@ void trib(int x, int y, int z){
 	if(c > 1000)
 		return;
 	printf("%d\t", c);
-         //再帰処理
-　trib(a,b,c);
+	trib(a, b, c);
 }
 int
 main(){
