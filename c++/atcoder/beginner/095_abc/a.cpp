@@ -1,14 +1,14 @@
-#include<iostream>
+#include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
-	char S[3];
-	cin >> S[0] >> S[1] >> S[2];
-
-	int count = 700;
-	for (int i = 0; i < 3; ++i){
-		if (S[i] == 'o') count += 100;
-	}
-	cout << count << endl;
-	return 0;
+    string s;
+    cin >> s;
+    int counter = 0;
+    if (s[0] == 'o') ++counter;
+    if (s[1] == 'o') ++counter;
+    if (s[2] == 'o') ++counter;
+    cout << counter*100 + 700 << endl;
+		return 0;
 }
